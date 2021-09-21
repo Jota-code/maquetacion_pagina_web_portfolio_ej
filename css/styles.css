@@ -47,43 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+body	{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.43;
+	background-color: #e7e7e7;
+	margin: 0;
+}
 
-
-
-
-html	{
+h1, h2, h3, h4	{
 	font-family: 'Bebas Neue', cursive;
 	letter-spacing: 1.5px;
-}
-
-header,.about-me,.skills,footer	{
-	background: #000000;
-	color: #a2a2a2;
-}
-
-header	{
-	height: 50px;
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.navbar-links	{
-	display: flex;
-	margin: 40px;
-}
-
-.skills	{
-	display: flex;
-    overflow: auto;
-    padding-bottom: 10px;
-    margin-top: 40px;
-}
-
-footer	{
-	display: flex;
-	height: 104px;
-    justify-content: center;
-    align-items: center;
 }
