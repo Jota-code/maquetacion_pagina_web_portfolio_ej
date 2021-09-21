@@ -47,6 +47,15 @@ table {
 	border-spacing: 0;
 } */
 
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+
 /*general*/
 body	{
 	font-family: 'Roboto', sans-serif;
@@ -64,6 +73,14 @@ h1, h2, h3, h4	{
 	font-weight: normal;
 }
 
+h1	{
+	margin-bottom: 32px;
+}
+
+h2	{
+	margin-bottom: 24px;
+}
+
 .button	{
 	font-family: inherit;
 	font-weight: 500;
@@ -77,8 +94,13 @@ h1, h2, h3, h4	{
 	line-height: 8px;
 }
 
+strong	{
+	font-weight: 500;
+}
+
 /*layout*/
-.wrapper	{
+.wrapper	{ 		/*update article #skills .list::before,
+	           			article #skills .list::after*/
 	padding-left: 24px;
 	padding-right: 24px;
 }
@@ -105,6 +127,7 @@ header	{
 
 header h2	{
 	font-size: 14px;
+	margin: 0;
 }
 
 header #icon-close	{
@@ -127,9 +150,64 @@ article section:first-child	h1	{
 }
 
 /*about me*/
+article #about-me	{
+	color: #a2a2a2;
+}
 
 /*skills*/
+article #skills	{
 
+}
+
+article #skills .list::before,
+article #skills .list::after	{
+	content: "";
+	margin-left: 24px;/*update wrapper*/
+}
+
+article #skills	.list	{
+	padding-bottom: 16px;
+	overflow: auto;
+	display: flex;
+	
+}
+
+article #skills .list .skill	{
+	margin-right: 32px;
+	border-radius: 3px;
+	box-shadow: 1px 2px 4px 8 rgba(0, 0, 0, 0.5);
+	flex-shrink: 0;
+	padding: 30px 34px;
+	background-color: black;
+	width: 208px;
+	color: #a2a2a2;
+}
+
+article #skills .list .skill:last-child	{
+	margin-right: 0;
+}
+
+article #skills .skill h3	{
+	margin-top: 0;
+	font-size: 14px;
+	border: solid 1px #fff;
+}
+
+article #skills .skill h4	{
+	color: white;
+}
+
+article #skills .skill ul	{
+	padding: 0;
+	list-style: none;
+
+}
+/*footer*/
 footer	{
-
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #a2a2a2;
+	height: 104px;
 }
