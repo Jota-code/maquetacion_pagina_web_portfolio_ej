@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,8 +45,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 
+/*general*/
 body	{
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
@@ -54,9 +55,81 @@ body	{
 	line-height: 1.43;
 	background-color: #e7e7e7;
 	margin: 0;
+	text-align: center;
 }
 
 h1, h2, h3, h4	{
 	font-family: 'Bebas Neue', cursive;
 	letter-spacing: 1.5px;
+	font-weight: normal;
+}
+
+.button	{
+	font-family: inherit;
+	font-weight: 500;
+	text-decoration: none;
+	color: #1c6698;
+	display: inline-block;
+	padding: 13px 31px;
+  	border-radius: 3px;
+	border: solid 2px #1c6698;
+	margin-top: 24px;
+	line-height: 8px;
+}
+
+/*layout*/
+.wrapper	{
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+article section:nth-child(even)	{
+	background-color: black;
+}
+
+article section	{
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+
+/*header*/
+header	{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	background-color: black;
+	color: #a2a2a2;
+}
+
+header h2	{
+	font-size: 14px;
+}
+
+header #icon-close	{
+	display: none;
+}
+
+header nav	{
+	display: none;
+}
+
+/*main section (summary)*/
+article section:first-child p	{
+	font-size: 10px;
+}
+
+article section:first-child	h1	{
+	font-size: 36px;
+	width: 220px;
+	margin: 0 auto;
+}
+
+/*about me*/
+
+/*skills*/
+
+footer	{
+
 }
